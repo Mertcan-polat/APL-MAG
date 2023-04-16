@@ -9,7 +9,7 @@ import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 
 function App() {
   const [loading, setLoading] = useState(false);
-  let [color, setColor] = useState("#36d7b7");
+  let [color] = useState("#36d7b7");
 
   const override = {
     display: "block",
