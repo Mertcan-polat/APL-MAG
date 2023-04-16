@@ -25,6 +25,7 @@ const ProductDetails = () => {
     return () => {
       dispatch(removeSelectedProduct());
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productId]);
   return (
     <div className="ui grid container">
@@ -41,7 +42,7 @@ const ProductDetails = () => {
               <div className="column rp">
                 <h1 className="text-3xl">{title}</h1>
                 <h2>
-                  <a className="ui teal tag label">${price}</a>
+                  <span className="ui teal tag label">${price}</span>
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
